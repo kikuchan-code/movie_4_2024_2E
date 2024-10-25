@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>とりあえずの動画置き場</title>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1em;
+        }
+
+        header {
+            background-color: #07365B;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+
+        main {
+            background-color: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .session {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+            max-width: 100%;
+        }
+
+        .details,
+        .big-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        /*大セクションのトグル機能*/
+        .toggle,
+        .big-toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        /*大セクション*/
+        .big-section {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            max-width: 75%;
+        }
+
+        /*目次*/
+        .table-for-contents {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            max-width: 75%;
+            border-bottom: 10px dotted #07365B;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>とりあえずの動画置き場</h1>
+    </header>
+    <p>実証試験(解説動画と成績の相関)も兼ねているので、<br>
+        <b><u>他の学年・コースに動画を共有なさらない</u></b>でください。<br>
+        このホームページのリンクの漏洩及び存在の示唆もなさらないでください。<br>
+        高専以外の外部への口外は論外です。
+    </p>
+
+    <main>
+
+        <div class="table-for-contents">
+            <h2>目次</h2>
+            <a href="#midashi_1">基礎物理2【電磁気分野】</a>
+        </div>
+
+        <div class="big-section">
+            <div class="big-toggle" id="midashi_1">基礎物理2【電磁気分野】: 詳細を表示</div>
+            <div class="big-details">
+                <div class="session">
+                    <div class="toggle">電場の宿題解説【問題4】前半: 詳細を表示</div>
+                    <div class="details">
+                        <p>電場の宿題の解説です。説明がグダグダですが、頑張って聞いてね。</p>
+                        <iframe width="100%" height="auto" src="YOUR_VIDEO_URL_1" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="session">
+                    <div class="toggle">電場の宿題解説【問題4】後半: 詳細を表示</div>
+                    <div class="details">
+                        <p>
+                            電場の宿題の解説です。LINEに送った解答より、<br>
+                            さらにスマートかつ簡単な解法です。<br>
+                            計算力を鍛えたい人は、余弦定理を使って頑張ってね♥
+                        </p>
+                        <iframe width="560" height="315" src="YOUR_VIDEO_URL_2" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.querySelectorAll('.toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                const details = this.nextElementSibling;
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block';
+                    this.textContent = this.textContent.replace('表示', '非表示');
+                } else {
+                    details.style.display = 'none';
+                    this.textContent = this.textContent.replace('非表示', '表示');
+                }
+            });
+        });
+
+        document.querySelectorAll('.big-toggle').forEach(bigToggle => {
+            bigToggle.addEventListener('click', function () {
+                const bigDetails = this.nextElementSibling;
+                if (bigDetails.style.display === 'none' || bigDetails.style.display === '') {
+                    bigDetails.style.display = 'block';
+                    this.textContent = this.textContent.replace('表示', '非表示');
+                } else {
+                    bigDetails.style.display = 'none';
+                    this.textContent = this.textContent.replace('非表示', '表示');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
