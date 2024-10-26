@@ -66,7 +66,6 @@
             cursor: pointer;
             color: #007BFF;
             text-decoration: underline;
-
         }
 
         /*大セクション*/
@@ -93,6 +92,25 @@
             margin-bottom: 20px;
             max-width: 75%;
             border-top: 10px dotted #07365B;
+        }
+
+        .video {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            /* 100%の幅に設定 */
+            padding-top: 56.25%;
+            /* アスペクト比を16:9に保つためのパディング（高さ） */
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            /* ボーダーを削除 */
         }
     </style>
 </head>
@@ -125,11 +143,13 @@
                     <div class="toggle">電場の宿題解説【問題4】前半: 詳細を表示</div>
                     <div class="details">
                         <p>電場の宿題の解説です。説明がグダグダですが、頑張って聞いてね。</p>
-                        <iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/cRYY9cWeMqU?si=cnh0pC3SP9BntME4"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe src="https://www.youtube-nocookie.com/embed/cRYY9cWeMqU?si=cnh0pC3SP9BntME4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="session">
@@ -143,11 +163,13 @@
                             抜けています。すいません。注意してください。<br>
                             計算力を鍛えたい人は、余弦定理を使って頑張ってね♥（別解）
                         </p>
-                        <iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,8 +182,9 @@
                     <div class="toggle">準備中: 詳細を表示</div>
                     <div class="details">
                         <p>動画撮るのに結構時間がかかるんです。<br>しばしお待ちを。</p>
-                        <iframe width="100%" height="auto" src="YOUR_VIDEO_URL_1" frameborder="0"
-                            allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
