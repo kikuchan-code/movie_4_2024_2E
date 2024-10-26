@@ -60,20 +60,21 @@
             border-top: 1px solid #ddd;
         }
 
-        /*大セクションのトグル機能*/
+        /*大セクション・セクションのトグル機能*/
         .toggle,
         .big-toggle {
             cursor: pointer;
             color: #007BFF;
             text-decoration: underline;
+
         }
 
         /*大セクション*/
         .big-section {
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
             max-width: 75%;
+            padding-bottom: 20px;
         }
 
         /*目次*/
@@ -81,8 +82,6 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
             max-width: 75%;
             border-bottom: 10px dotted #07365B;
         }
@@ -104,7 +103,8 @@
 
         <div class="table-for-contents">
             <h2>目次</h2>
-            <a href="#midashi_1">基礎物理2【電磁気分野】</a>
+            <p><a href="#midashi_1">基礎物理2【電磁気分野】</a></p>
+            <p><a href="#midashi_2">電気電子材料1【準備中】</a></p>
         </div>
 
         <div class="big-section">
@@ -132,8 +132,23 @@
                 </div>
             </div>
         </div>
+
+        <div class="big-section">
+            <div class="big-toggle" id="midashi_2">電気電子材料1【準備中】: 詳細を表示</div>
+            <div class="big-details">
+                <div class="session">
+                    <div class="toggle">準備中: 詳細を表示</div>
+                    <div class="details">
+                        <p>動画撮るのに結構時間がかかるんです。<br>しばしお待ちを。</p>
+                         <iframe width="100%" height="auto" src="YOUR_VIDEO_URL_1" frameborder="0"
+                             allowfullscreen></iframe>
+                     </div>
+                </div>
+            </div>
+         </div>
+       
     </main>
-    
+
     <script>
         document.querySelectorAll('.toggle').forEach(toggle => {
             toggle.addEventListener('click', function () {
