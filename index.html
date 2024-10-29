@@ -9,144 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>とりあえずの動画置き場</title>
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 1em;
-        }
-
-        header {
-            background-color: #07365B;
-            color: white;
-            padding: 1em;
-            text-align: center;
-            width: 100%;
-        }
-
-        main {
-            background-color: white;
-            padding: 2em;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: center;
-            max-width: 100%;
-            width: 100%;
-            overflow-x: auto;
-        }
-
-        .subject {
-            margin-top: 1vh;
-            margin-bottom: 1vh;
-        }
-
-        .session {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            background-color: #fff;
-            max-width: 100%;
-        }
-
-        .details,
-        .big-details {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            border-top: 1px solid #ddd;
-        }
-
-        /*セクションのトグル機能*/
-        .toggle {
-            cursor: pointer;
-            color: #007BFF;
-        }
-        /*大セクションのトグル機能*/
-        .big-toggle {
-            cursor: pointer;
-            color: #007BFF;
-            border: thick double #ddd;
-        }
-
-        /*点線の下線text-decoration: underline dotted;*/
-
-        /*大セクション*/
-        .big-section {
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 75%;
-            padding-bottom: 20px;
-        }
-
-        /*目次の設定項目*/
-        .table-for-contents {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-            max-width: 75%;
-            border-bottom: 10px dotted #07365B;
-        }
-
-        /*目次の設定項目*/
-        .form {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-            max-width: 75%;
-            border-top: 10px dotted #07365B;
-        }
-
-        /* 動画 */
-        .video {
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            overflow: hidden;
-            width: 75%;
-            /* 75%の幅に設定 */
-            padding-top: 56.25%;
-            /* アスペクト比を16:9に保つためのパディング（高さ） */
-        }
-
-        /* 動画（いじらない） */
-        .video iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            /* ボーダーを削除 */
-        }
-
-        /* 画像*/
-        .image_section {
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-            overflow: hidden;
-            position: relative;
-            width: 75%;
-            /* 75%の幅に設定 */
-
-        }
-
-        /* 画像（いじらない） */
-        .image_section img {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -213,6 +76,16 @@
                         <div class="details">
                             <p>
                                 コンデンサーの静電容量の式の導出です。
+                            <div
+                                style="border: thick double #ddd ; font-size: 28px; font-family: 'Times New Roman', Times, serif;">
+                                C=ε
+                                <math>
+                                    <mfrac>
+                                        <mtext>S</mtext>
+                                        <mtext>d</mtext>
+                                    </mfrac>
+                                </math>
+                            </div>
                             </p>
                             <div class="video">
                                 <iframe src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
@@ -246,41 +119,17 @@
         </div>
 
         <div class="form">
-            <h2>お問い合わせフォーム</h2>
+            <div style="padding: 10px;">
+                <h2>お問い合わせフォーム</h2>
+            </div>
             <p>要望・質問・疑義等はフォームまでお願いします。</p>
             <a href="https://forms.gle/CUS8GTPhV2zva9Rr5" target="_blank" rel="noopener noreferrer">フォームはこちら</a>
         </div>
 
     </main>
 
-    <!---ここから先、謎なので触るべからず。--->
-    <script>
-        document.querySelectorAll('.toggle').forEach(toggle => {
-            toggle.addEventListener('click', function () {
-                const details = this.nextElementSibling;
-                if (details.style.display === 'none' || details.style.display === '') {
-                    details.style.display = 'block';
-                    this.textContent = this.textContent.replace('表示', '非表示');
-                } else {
-                    details.style.display = 'none';
-                    this.textContent = this.textContent.replace('非表示', '表示');
-                }
-            });
-        });
-
-        document.querySelectorAll('.big-toggle').forEach(bigToggle => {
-            bigToggle.addEventListener('click', function () {
-                const bigDetails = this.nextElementSibling;
-                if (bigDetails.style.display === 'none' || bigDetails.style.display === '') {
-                    bigDetails.style.display = 'block';
-                    this.textContent = this.textContent.replace('表示', '非表示');
-                } else {
-                    bigDetails.style.display = 'none';
-                    this.textContent = this.textContent.replace('非表示', '表示');
-                }
-            });
-        });
-    </script>
+    <footer>製作者：菊川　颯太</footer>
+    <script src="script.js" async></script>
 </body>
 
 </html>
