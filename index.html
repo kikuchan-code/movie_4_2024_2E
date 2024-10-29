@@ -41,6 +41,11 @@
             overflow-x: auto;
         }
 
+        .subject {
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+
         .session {
             margin-left: auto;
             margin-right: auto;
@@ -59,13 +64,19 @@
             border-top: 1px solid #ddd;
         }
 
-        /*大セクション・セクションのトグル機能*/
-        .toggle,
+        /*セクションのトグル機能*/
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        /*大セクションのトグル機能*/
         .big-toggle {
             cursor: pointer;
             color: #007BFF;
-            text-decoration: underline;
+            border: thick double #ddd;
         }
+
+        /*点線の下線text-decoration: underline dotted;*/
 
         /*大セクション*/
         .big-section {
@@ -93,6 +104,7 @@
             border-top: 10px dotted #07365B;
         }
 
+        /* 動画 */
         .video {
             margin-left: auto;
             margin-right: auto;
@@ -104,6 +116,7 @@
             /* アスペクト比を16:9に保つためのパディング（高さ） */
         }
 
+        /* 動画（いじらない） */
         .video iframe {
             position: absolute;
             top: 0;
@@ -114,6 +127,7 @@
             /* ボーダーを削除 */
         }
 
+        /* 画像*/
         .image_section {
             margin-left: auto;
             margin-right: auto;
@@ -122,9 +136,10 @@
             position: relative;
             width: 75%;
             /* 75%の幅に設定 */
-            
+
         }
 
+        /* 画像（いじらない） */
         .image_section img {
             top: 0;
             left: 0;
@@ -152,86 +167,90 @@
             <h2>目次</h2>
             <p><a href="#midashi_1">基礎物理2【電磁気分野】</a></p>
             <p><a href="#midashi_2">電気電子材料1【準備中】</a></p>
+            <p>順次、科目を追加予定。</p>
         </div>
 
         <!---YouTubeリンクは、「共有」→「埋め込む」でGet! widthとheightは削除--->
-
-        <div class="big-section">
-            <div class="big-toggle" id="midashi_1">基礎物理2【電磁気分野】: 詳細を表示</div>
-            <div class="big-details">
-                <div class="session">
-                    <div class="toggle">電場の宿題解説【問題4】前半: 詳細を表示</div>
-                    <div class="details">
-                        <p>電場の宿題の解説です。説明がグダグダですが、頑張って聞いてね。</p>
-                        <div class="video">
-                            <iframe src="https://www.youtube-nocookie.com/embed/cRYY9cWeMqU?si=cnh0pC3SP9BntME4"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
+        <div class="subject">
+            <div class="big-section">
+                <div class="big-toggle" id="midashi_1">基礎物理2【電磁気分野】: 詳細を表示</div>
+                <div class="big-details">
+                    <div class="session">
+                        <div class="toggle">電場の宿題解説【問題4】前半: 詳細を表示</div>
+                        <div class="details">
+                            <p>電場の宿題の解説です。説明がグダグダですが、頑張って聞いてね。</p>
+                            <div class="video">
+                                <iframe src="https://www.youtube-nocookie.com/embed/cRYY9cWeMqU?si=cnh0pC3SP9BntME4"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="session">
-                    <div class="toggle">電場の宿題解説【問題4】後半: 詳細を表示</div>
-                    <div class="details">
-                        <p>
-                            電場の宿題の解説です。LINEに送った解答より、
-                            さらにスマートかつ簡単な解法です。<br>
-                            なお、<b>E<sub>B</sub></b>のy成分において、
-                            <b>E<sub>A</sub></b>の右の「|（大きさを表す記号）」が
-                            抜けています。すいません。注意してください。<br>
-                            計算力を鍛えたい人は、余弦定理を使って頑張ってね♥（別解）
-                        </p>
-                        <div class="video">
-                            <iframe src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
+                    <div class="session">
+                        <div class="toggle">電場の宿題解説【問題4】後半: 詳細を表示</div>
+                        <div class="details">
+                            <p>
+                                電場の宿題の解説です。LINEに送った解答より、
+                                さらにスマートかつ簡単な解法です。<br>
+                                なお、<b>E<sub>B</sub></b>のy成分において、
+                                <b>E<sub>A</sub></b>の右の「|（大きさを表す記号）」が
+                                抜けています。すいません。注意してください。<br>
+                                計算力を鍛えたい人は、余弦定理を使って頑張ってね♥（別解）
+                            </p>
+                            <div class="video">
+                                <iframe src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="session">
-                    <div class="toggle">【導出】コンデンサーの静電容量の式 C=εS/d: 詳細を表示</div>
-                    <div class="details">
-                        <p>
-                            コンデンサーの静電容量の式の導出です。
-                        </p>
-                        <div class="video">
-                            <iframe src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div class="image_section">
+                    <div class="session">
+                        <div class="toggle">【導出】コンデンサーの静電容量の式 C=εS/d: 詳細を表示</div>
+                        <div class="details">
+                            <p>
+                                コンデンサーの静電容量の式の導出です。
+                            </p>
+                            <div class="video">
+                                <iframe src="https://www.youtube-nocookie.com/embed/T6LxtRNl59E?si=vUG8eLlkhCSADYp3"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="image_section">
                                 <img src="img/導出_コンデンサー_静電容量_公式.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="big-section">
+                <div class="big-toggle" id="midashi_2">電気電子材料1【準備中】: 詳細を表示</div>
+                <div class="big-details">
+                    <div class="session">
+                        <div class="toggle">準備中: 詳細を表示</div>
+                        <div class="details">
+                            <p>動画撮るのに結構時間がかかるんです。<br>しばしお待ちを。</p>
+                            <div class="video">
+                                <iframe></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="big-section">
-            <div class="big-toggle" id="midashi_2">電気電子材料1【準備中】: 詳細を表示</div>
-            <div class="big-details">
-                <div class="session">
-                    <div class="toggle">準備中: 詳細を表示</div>
-                    <div class="details">
-                        <p>動画撮るのに結構時間がかかるんです。<br>しばしお待ちを。</p>
-                        <div class="video">
-                            <iframe></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="form">
             <h2>お問い合わせフォーム</h2>
             <p>要望・質問・疑義等はフォームまでお願いします。</p>
             <a href="https://forms.gle/CUS8GTPhV2zva9Rr5" target="_blank" rel="noopener noreferrer">フォームはこちら</a>
         </div>
+
     </main>
 
     <!---ここから先、謎なので触るべからず。--->
