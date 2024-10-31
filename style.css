@@ -124,9 +124,9 @@ main {
 .image_section {
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    padding-top: 5%;
     width: 100%;
     /* 100%（任意）の幅に設定 */
 
