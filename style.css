@@ -81,6 +81,7 @@ main {
 .toggle {
     cursor: pointer;
     color: #007BFF;
+    text-decoration: underline;
 }
 
 /*大セクションのトグル機能*/
