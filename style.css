@@ -29,11 +29,24 @@ main {
     overflow-x: auto;
 }
 
-.subject {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+
+/*目次の設定項目*/
+.table-for-contents {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 75%;
 }
 
+/*解説動画部の設定項目*/
+.subject {
+    border-top: 10px dotted #07365B;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+}
+
+/*各セッションの設定項目*/
 .session {
     margin-left: auto;
     margin-right: auto;
@@ -42,6 +55,14 @@ main {
     padding: 10px;
     background-color: #fff;
     max-width: 100%;
+}
+
+/*大セクションの設定項目*/
+.big-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    padding-bottom: 20px;
 }
 
 /*big-details：セクションの小見出し一覧*/
@@ -71,25 +92,17 @@ main {
 
 /*点線の下線text-decoration: underline dotted;*/
 
-/*大セクション*/
-.big-section {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%;
-    padding-bottom: 20px;
-}
-
-/*目次の設定項目*/
-.table-for-contents {
+/*お問い合わせの設定項目*/
+.form {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     max-width: 75%;
-    border-bottom: 10px dotted #07365B;
+    border-top: 10px dotted #07365B;
 }
 
-/*目次の設定項目*/
-.form {
+/*予定の設定項目*/
+.schedule {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
