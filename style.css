@@ -50,19 +50,15 @@ main {
 
 /*各セッションの設定項目*/
 .session {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
-    width: 100%;
+    width: 90%; /* 中央揃えの幅を調整 */
 }
 
 /*大セクションの設定項目*/
 .big-section {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -76,7 +72,7 @@ main {
     padding: 10px;
     border-top: 1px solid #ddd;
 }
-/*details：セクション内の詳細*/
+/*small-details：セクション内小見出しの詳細*/
 .small-details{
     display: none;
     margin-top: 10px;
@@ -87,6 +83,7 @@ main {
 /*セクション（小見出し）のトグル機能*/
 .small-toggle {
     cursor: pointer;
+    padding: 10px;
     color: #007BFF;
     text-decoration: underline;
 }
@@ -187,7 +184,6 @@ a {
 /*参考：https://poppyou.com/box-design.html#index_id4*/
 .fusen {
     padding: 0.5em;
-    margin: 2em 0;
     background-color:#DFF2FC;/*背景色*/
     border-left: solid 10px #07365B;/*左ライン*/
     color:#000000;/*文字色*/
