@@ -1,3 +1,4 @@
+/* Body全体の設定 */
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #f0f0f0;
@@ -10,53 +11,50 @@ body {
     padding: 1em;
 }
 
+/* Headerのスタイル */
 header {
     background-color: #07365B;
     color: white;
     padding: 1em;
     text-align: center;
     width: 100%;
-
 }
 
+/* Main部分のスタイル */
 main {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 2em;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     width: 80%;
+    max-width: 1200px; /* 最大幅を設定 */
     overflow-x: auto;
 }
 
-/*オープニングの設定項目*/
+/* オープニングの設定項目 */
 .opening {
     max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-
-/*目次の設定項目*/
+/* 目次の設定項目 */
 .table-for-contents {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     width: 100%;
+    text-align: center; /* 中央揃え */
 }
 
-/*左揃え*/
+/* 左揃え */
 .hidarizoroe {
     text-align: left;
 }
 
-/*解説動画部の設定項目*/
+/* 解説動画部の設定項目 */
 .subject {
     border-top: 10px dotted #07365B;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -65,36 +63,40 @@ main {
 /*小セクション（セクション内小見出し）…セクション内の小見出し（）*/
 /*例：セクション「三角関数」、小セクション「加法定理」*/
 
-
-/*各セッションの設定項目*/
+/* 各セッションの設定項目 */
 .session {
     margin-bottom: 10px;
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
     width: 90%;
-    /* 中央揃えの幅を調整 */
+    margin: 0 auto; /* 中央揃え */
 }
 
-/*大セクションの設定項目*/
+/* 大セクションの設定項目 */
 .big-section {
+    margin: 0 auto;
     width: 100%;
     padding-bottom: 20px;
 }
 
-/*big-details：セクションの小見出し一覧*/
-/*details：セクションの詳細*/
-.details,
+/* big-details：セクションの小見出し一覧 */
 .big-details {
     display: none;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px;
     border-top: 1px solid #ddd;
 }
 
-/*small-details：セクション内小見出しの詳細*/
+/* details：セクションの詳細 */
+.details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* small-details：セクション内小見出しの詳細 */
 .small-details {
     display: none;
     margin-top: 10px;
@@ -102,7 +104,7 @@ main {
     border: 1px solid #ddd;
 }
 
-/*セクション（小見出し）のトグル機能*/
+/* 小セクション（セクション内の小見出し）のトグル機能 */
 .small-toggle {
     cursor: pointer;
     padding: 10px;
@@ -110,14 +112,14 @@ main {
     text-decoration: underline;
 }
 
-/*小セクション（セクション内の小見出し）のトグル機能*/
+/* セクション（小見出し）のトグル機能 */
 .toggle {
     cursor: pointer;
     color: #007BFF;
     text-decoration: underline;
 }
 
-/*大セクションのトグル機能*/
+/* 大セクションのトグル機能 */
 .big-toggle {
     cursor: pointer;
     color: #007BFF;
@@ -126,45 +128,27 @@ main {
     padding: 10px;
 }
 
-/*点線の下線text-decoration: underline dotted;*/
-
-/*お問い合わせの設定項目*/
+/* お問い合わせの設定項目 */
 .form {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     max-width: 100%;
     border-top: 10px dotted #07365B;
 }
 
-/*予定の設定項目*/
-.schedule {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    width: 100%;
-    border-top: 10px dotted #07365B;
-}
-
-/*予定の設定項目*/
-.one_word {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+/* 予定の設定項目 */
+.schedule, .one_word {
+    margin: 0 auto 20px;
     width: 100%;
     border-top: 10px dotted #07365B;
 }
 
 /* 動画 */
 .video {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* 100%（任意）の幅に設定 */
     padding-top: 56.25%;
-    /* アスペクト比を16:9に保つためのパディング（高さ） */
 }
 
 /* 動画（いじらない） */
@@ -175,19 +159,15 @@ main {
     width: 100%;
     height: 100%;
     border: 0;
-    /* ボーダーを削除 */
 }
 
-/* 画像*/
+/* 画像 */
 .image_section {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     padding-top: 5%;
     width: 100%;
-    /* 100%（任意）の幅に設定 */
-
 }
 
 /* 画像（いじらない） */
@@ -195,23 +175,20 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto; /* 高さを自動に設定 */
 }
 
-/*aタブのフォントの色*/
+/* aタグのフォント色 */
 a {
     color: #0000ee;
 }
 
-/*参考：https://poppyou.com/box-design.html#index_id4*/
+/* ふせんのスタイル */
 .fusen {
     padding: 0.5em;
     background-color: #DFF2FC;
-    /*背景色*/
     border-left: solid 10px #07365B;
-    /*左ライン*/
     color: #000000;
-    /*文字色*/
 }
 
 .fusen p {
