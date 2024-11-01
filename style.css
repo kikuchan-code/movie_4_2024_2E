@@ -31,6 +31,12 @@ main {
     overflow-x: auto;
 }
 
+/*オープニングの設定項目*/
+.opening {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*目次の設定項目*/
 .table-for-contents {
@@ -38,6 +44,11 @@ main {
     margin-right: auto;
     margin-bottom: 20px;
     width: 100%;
+}
+
+/*左揃え*/
+.hidarizoroe {
+    text-align: left;
 }
 
 /*解説動画部の設定項目*/
@@ -54,7 +65,8 @@ main {
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
-    width: 90%; /* 中央揃えの幅を調整 */
+    width: 90%;
+    /* 中央揃えの幅を調整 */
 }
 
 /*大セクションの設定項目*/
@@ -72,8 +84,9 @@ main {
     padding: 10px;
     border-top: 1px solid #ddd;
 }
+
 /*small-details：セクション内小見出しの詳細*/
-.small-details{
+.small-details {
     display: none;
     margin-top: 10px;
     padding: 10px;
@@ -184,12 +197,15 @@ a {
 /*参考：https://poppyou.com/box-design.html#index_id4*/
 .fusen {
     padding: 0.5em;
-    background-color:#DFF2FC;/*背景色*/
-    border-left: solid 10px #07365B;/*左ライン*/
-    color:#000000;/*文字色*/
+    background-color: #DFF2FC;
+    /*背景色*/
+    border-left: solid 10px #07365B;
+    /*左ライン*/
+    color: #000000;
+    /*文字色*/
 }
 
 .fusen p {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
