@@ -1,3 +1,16 @@
+document.querySelectorAll('.small-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function () {
+        const details = this.nextElementSibling;
+        if (details.style.display === 'none' || details.style.display === '') {
+            details.style.display = 'block';
+            this.textContent = this.textContent.replace('表示', '非表示');
+        } else {
+            details.style.display = 'none';
+            this.textContent = this.textContent.replace('非表示', '表示');
+        }
+    });
+});
+
 document.querySelectorAll('.toggle').forEach(toggle => {
     toggle.addEventListener('click', function () {
         const details = this.nextElementSibling;

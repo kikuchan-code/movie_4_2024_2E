@@ -76,8 +76,22 @@ main {
     padding: 10px;
     border-top: 1px solid #ddd;
 }
+/*details：セクション内の詳細*/
+.small-details{
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
 
 /*セクション（小見出し）のトグル機能*/
+.small-toggle {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+/*小セクション（セクション内の小見出し）のトグル機能*/
 .toggle {
     cursor: pointer;
     color: #007BFF;
