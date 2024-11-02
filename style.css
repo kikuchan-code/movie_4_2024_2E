@@ -107,28 +107,25 @@ main {
 /* 大セクションのトグル機能 */
 .big-toggle {
     cursor: pointer;
-    color: #004898;
+    color: #0000ee;
     border: thick double #ddd;
     text-decoration: underline double;
-    text-decoration-color: #003775;
     padding: 10px;
 }
 
 /* セクション（小見出し）のトグル機能 */
 .toggle {
     cursor: pointer;
-    color: #004898;
+    color: #0000ee;
     text-decoration: underline;
-    text-decoration-color: #003775;
 }
 
 /* 小セクション（セクション内の小見出し）のトグル機能 */
 .small-toggle {
     cursor: pointer;
     padding: 10px;
-    color: #004898;
+    color: #0000ee;
     text-decoration: underline;
-    text-decoration-color: #003775;
 }
 
 /* お問い合わせの設定項目 */
