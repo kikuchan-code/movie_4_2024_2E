@@ -1,6 +1,6 @@
-/* 基本スタイル */
+/* Body全体の設定 */
 body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: sans-serif; /* デフォルトフォントに変更 */
     background-color: #f0f0f0;
     margin: 0;
     display: flex;
@@ -191,4 +191,22 @@ a {
 .fusen p {
     margin: 0;
     padding: 0;
+}
+
+/* スマホ対応のスタイル調整 */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    main {
+        width: 95%;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    header, footer {
+        width: 100%;
+        padding: 0.5em;
+    }
 }
