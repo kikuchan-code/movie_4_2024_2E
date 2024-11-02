@@ -1,4 +1,4 @@
-/* Body全体の設定 */
+/* 基本スタイル */
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #f0f0f0;
@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
     padding: 1em;
 }
@@ -20,16 +19,15 @@ header {
     width: 100%;
 }
 
-/* Main部分のスタイル */
+/* レスポンシブデザインのための最大幅を設定 */
 main {
-    margin: 0 auto;
     padding: 2em;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     width: 80%;
-    max-width: 1200px; /* 最大幅を設定 */
+    max-width: 1200px;
     overflow-x: auto;
 }
 
@@ -143,16 +141,14 @@ main {
     border-top: 10px dotted #07365B;
 }
 
-/* 動画 */
+/* 動画のスタイル */
 .video {
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
+    position: relative;
 }
 
-/* 動画（いじらない） */
+/* iframeをレスポンシブ対応に（いじらない） */
 .video iframe {
     position: absolute;
     top: 0;
@@ -167,7 +163,6 @@ main {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    padding-top: 5%;
     width: 100%;
 }
 

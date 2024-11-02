@@ -2,14 +2,13 @@
 <html lang="ja">
 
 <head>
+    <!-- フォントリンクをまとめてプリロードし、HTTPリクエストを削減 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>とりあえずの動画置き場</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,14 +17,12 @@
     </header>
 
     <p class="opening">
-
-        　他クラスでの僕のミーム化による、セキュリティ的な対策や、
+        <!-- 不要なスペースと改行を削除 -->
+        他クラスでの僕のミーム化による、セキュリティ的な対策や、
         実証試験(解説動画と成績の相関←これはついで)も兼ねているので、
         <b><u>他の学年・コースに動画を共有なさらない</u></b>でください。<br>
-        　ここにある動画はすべて、限定公開の動画です。したがって、このホーム
-        ページのリンクの漏洩及び存在の示唆もなさらないでください。<br>
-        　高専以外の外部への口外は論外です。
-        
+        ここにある動画はすべて、限定公開の動画です。したがって、このホームページのリンクの漏洩及び存在の示唆もなさらないでください。<br>
+        高専以外の外部への口外は論外です。
     </p>
 
     <main>
@@ -82,7 +79,7 @@
                                 <a href="doc/Electric_field_ploblem_4_.pdf" target="_blank"
                                     rel="noopener noreferrer">解答PDFはこちら</a>
                             </p>
-                            <!-- loading="lazy" 軽くなるおまじない。Iframeへ入力。-->  
+                            <!-- loading="lazy" 軽くなるおまじない。Iframeへ入力。-->
                             <div class="video">
                                 <iframe src="https://www.youtube-nocookie.com/embed/cRYY9cWeMqU?si=cnh0pC3SP9BntME4"
                                     title="YouTube video player" frameborder="0" loading="lazy"
@@ -151,9 +148,8 @@
                     <div class="session">
                         <div class="toggle">【発展】電場プリント：問題8: 詳細を表示</div>
                         <div class="details">
-                            <p>
+                            <p>問題8の解説です。喉の調子が悪いので、とりあえず板書のみとします。
                             <div class="image_section">
-                                問題8の解説です。喉の調子が悪いので、とりあえず板書のみとします。
                                 <img src="img/Electric_field_ploblem_8_.jpg">
                             </div>
                             </p>
@@ -207,12 +203,12 @@
                         <div class="toggle">教科書問6.2: 詳細を表示</div>
                         <div class="details">
                             <p>（１）です。
-                                <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(1).jpg"></div>
+                            <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(1).jpg"></div>
                             </p>
                             <p>（２）です。
-                                <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(2)_1.jpg"></div>
-                                <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(2)_2.jpg"></div>
-                                <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(2)_3.jpg"></div>
+                            <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(2)_1.jpg"></div>
+                            <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(2)_2.jpg"></div>
+                            <div class="image_section"> <img src="img/Culculus_Textbook_Ploblem_6.2(2)_3.jpg"></div>
                             </p>
                         </div>
                     </div>
@@ -261,6 +257,7 @@
     </main>
 
     <footer>製作者：菊川　颯太</footer>
+    <!-- async属性を追加し、非同期でスクリプトを読み込む -->
     <script src="script.js" async></script>
 </body>
 
