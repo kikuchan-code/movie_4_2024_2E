@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>とりあえずの動画置き場</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!---MathJax--->
     <meta name="description" content="2024年度の2E学生のための、学習補助用Webサイトです。">
     <!---Googleとかに表示される、概要の文。--->
 </head>
@@ -124,15 +125,9 @@
                         <div class="details">
                             <p>
                                 コンデンサーの静電容量の式の導出です。
-                            <div style="font-size: 28px; font-family: 'Times New Roman', Times, serif;">
+                            <div style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">
                                 <div class="fusen">
-                                    C=ε
-                                    <math>
-                                        <mfrac style="font-family: 'Times New Roman', Times, serif; ">
-                                            <mtext>S</mtext>
-                                            <mtext>d</mtext>
-                                        </mfrac>
-                                    </math>
+                                    \(  C=\varepsilon_0\dfrac{S}{d} \)
                                 </div>
                             </div>
                             </p>
@@ -301,6 +296,9 @@
                         <div class="toggle">【証明】lim(θ→0)sinθ/θ=1: 詳細を表示</div>
                         <div class="details">
                             <p>
+                                <div class="fusen">
+                                    \(  \displaystyle \lim_{\theta \to 0}\dfrac{\sin\theta}{\theta}=1 \)
+                                </div>
                                 板書に書いた証明です。
                             <div class="image_section">
                                 <picture>
@@ -333,6 +331,9 @@
                         <div class="toggle">【証明】(cos<sup>-1</sup>)'=-1/√(1-x<sup>2</sup>): 詳細を表示</div>
                         <div class="details">
                             <p>
+                                <div class="fusen">
+                                    \(  (\cos^{-1})'=-\dfrac{1}{ \sqrt{1-x^2} } \)
+                                </div>
                                 板書に書いた証明を修正した証明です。
                             <div class="image_section">
                                 <picture>
@@ -359,7 +360,7 @@
                                 　軽い解説をすると、ロルの定理を考える関数は区間Iで微分可能な関数なので、極限値が存在しなければならず、極限値が存在するときは片側極限が一致するときであるということです。<br>
                                 　平均値の定理は、線分ABと関数f(x)の差を考えて、ロルの定理を適用させるだけです（こっちのほうが簡単）。<br>
                             </p>
-                            <a href="doc/【handout】Proof_Rolle's_Average_theorem.pdf" target="_blank"
+                            <a href="doc/-Handout-Proof_Rolle's_Average_theorem" target="_blank"
                                 rel="noopener noreferrer">PDFはこちら</a>
                             </p>
                         </div>
