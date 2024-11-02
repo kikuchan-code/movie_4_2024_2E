@@ -33,7 +33,8 @@ main {
 
 /* オープニングの設定項目 */
 .opening {
-    max-width: 75%;
+    max-width: 1200px;
+    width: 75%;
     margin: 20px auto;
 }
 
