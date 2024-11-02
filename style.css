@@ -36,7 +36,7 @@ main {
 /* オープニングの設定項目 */
 .opening {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 /* 目次の設定項目 */
@@ -71,6 +71,7 @@ main {
     background-color: #fff;
     width: 90%;
     margin: 0 auto; /* 中央揃え */
+    margin-bottom: 10px; /* 各項目の縦の隙間 */
 }
 
 /* 大セクションの設定項目 */
@@ -104,12 +105,13 @@ main {
     border: 1px solid #ddd;
 }
 
-/* 小セクション（セクション内の小見出し）のトグル機能 */
-.small-toggle {
+/* 大セクションのトグル機能 */
+.big-toggle {
     cursor: pointer;
-    padding: 10px;
     color: #007BFF;
-    text-decoration: underline;
+    border: thick double #ddd;
+    text-decoration: underline double;
+    padding: 10px;
 }
 
 /* セクション（小見出し）のトグル機能 */
@@ -119,13 +121,12 @@ main {
     text-decoration: underline;
 }
 
-/* 大セクションのトグル機能 */
-.big-toggle {
+/* 小セクション（セクション内の小見出し）のトグル機能 */
+.small-toggle {
     cursor: pointer;
-    color: #007BFF;
-    border: thick double #ddd;
-    text-decoration: underline double;
     padding: 10px;
+    color: #007BFF;
+    text-decoration: underline;
 }
 
 /* お問い合わせの設定項目 */
