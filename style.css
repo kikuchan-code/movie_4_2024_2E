@@ -12,7 +12,7 @@ body {
 
 /* Headerのスタイル */
 header {
-    background-color: #07365B;
+    background-color: #004898;
     color: white;
     padding: 1em;
     text-align: center;
@@ -52,7 +52,7 @@ main {
 
 /* 解説動画部の設定項目 */
 .subject {
-    border-top: 10px dotted #07365B;
+    border-top: 10px dotted #004898;
     margin: 0 auto;
     width: 100%;
 }
@@ -107,25 +107,28 @@ main {
 /* 大セクションのトグル機能 */
 .big-toggle {
     cursor: pointer;
-    color: #007BFF;
+    color: #004898;
     border: thick double #ddd;
     text-decoration: underline double;
+    text-decoration-color: #003775;
     padding: 10px;
 }
 
 /* セクション（小見出し）のトグル機能 */
 .toggle {
     cursor: pointer;
-    color: #007BFF;
+    color: #004898;
     text-decoration: underline;
+    text-decoration-color: #003775;
 }
 
 /* 小セクション（セクション内の小見出し）のトグル機能 */
 .small-toggle {
     cursor: pointer;
     padding: 10px;
-    color: #007BFF;
+    color: #004898;
     text-decoration: underline;
+    text-decoration-color: #003775;
 }
 
 /* お問い合わせの設定項目 */
