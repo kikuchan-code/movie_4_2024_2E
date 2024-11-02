@@ -132,14 +132,14 @@ main {
 .form {
     margin: 0 auto 20px;
     max-width: 100%;
-    border-top: 10px dotted #07365B;
+    border-top: 10px dotted #004898;
 }
 
 /* 予定の設定項目 */
 .schedule, .one_word {
     margin: 0 auto 20px;
     width: 100%;
-    border-top: 10px dotted #07365B;
+    border-top: 10px dotted #004898;
 }
 
 /* 動画のスタイル */
@@ -184,7 +184,7 @@ a {
 .fusen {
     padding: 0.5em;
     background-color: #DFF2FC;
-    border-left: solid 10px #07365B;
+    border-left: solid 10px #003775;
     color: #000000;
 }
 
