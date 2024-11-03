@@ -40,11 +40,6 @@ main {
     /* 中央揃え */
 }
 
-/* 左揃え */
-.hidarizoroe {
-    text-align: left;
-}
-
 /* 解説動画部の設定項目 */
 .subject {
     border-top: 10px dotted #004898;
@@ -132,13 +127,6 @@ main {
     list-style: circle !important; /* 強制的にリストスタイルを適用 */;
 }
 
-/* 数式部：数式は、\(ここに数式\)のように記述 */
-.math {
-    width: 100%;
-    font-size: clamp(10px, calc(0.5em + 2vw), 20px) ;
-    margin: 0;
-}
-
 /* お問い合わせの設定項目 */
 .form {
     margin: 0 auto 20px;
@@ -189,9 +177,26 @@ main {
     /* 高さを自動に設定 */
 }
 
+/* 数式部：数式は、\(ここに数式\)のように記述 */
+.math {
+    width: 100%;
+    font-size: clamp(10px, calc(0.5em + 2vw), 20px) ;
+    margin: 0;
+}
+
 /* aタグのフォント色 */
 a {
     color: #0000ee;
+}
+
+/* 左揃え */
+.hidarizoroe {
+    text-align: left;
+}
+
+/* 太字 */
+.futoji{
+    font-weight:bold
 }
 
 /* ふせんのスタイル */
