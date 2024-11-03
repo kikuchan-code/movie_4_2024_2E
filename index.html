@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <!---KaTeX関連。onloadとnoscriptで読み込みを遅らせる（サイト読み込み速度向上）。--->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
         integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous"
-        media="print" onload="this.media='all'; this.onload=null;">
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-    </noscript>
+        onload="this.rel='stylesheet'">
 
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
