@@ -18,7 +18,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// それぞれのトグルに対して実行
-setupToggle('.small-toggle', 'small-details');
-setupToggle('.toggle', 'details');
-setupToggle('.big-toggle', 'big-details');
