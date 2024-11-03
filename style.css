@@ -124,8 +124,8 @@ main {
 
 /* 小セクション（セクション内の小見出し）の点（ドット） */
 .small-toggle li {
-    list-style: circle !important; /* 強制的にリストスタイルを適用 */;
-}
+    list-style: circle; 
+    }
 
 /* お問い合わせの設定項目 */
 .form {
