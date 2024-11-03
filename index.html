@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta name="description" content="2024年度の2E学生のための、学習補助用Webサイトです。">
     <!---Googleとかに表示される、概要の文。--->
+    <!---KaTeX関連--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+        integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+        integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg"
+        crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
 </head>
 
 <body>
@@ -126,7 +140,7 @@
                                 コンデンサーの静電容量の式の導出です。
                             <div style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">
                                 <div class="fusen">
-                                    \(  C=\varepsilon_0\dfrac{S}{d} \)
+                                    \( C=\varepsilon_0\dfrac{S}{d} \)
                                 </div>
                             </div>
                             </p>
@@ -269,7 +283,12 @@
                                 </picture>
                             </div>
                             </p>
-                            <p>（２）です。
+                            <p>（２）です。<br>
+                                なお、答えは、
+                            <div class="math">
+                                \( x= \dfrac{3 \pi}{4} のとき、最小値は y= -\dfrac{-e^{\frac{3 \pi}{4}} }{\sqrt{2} }\)<br>
+                                \( x=0 のとき、最大値は y=1\)
+                            </div>
                             <div class="image_section">
                                 <picture>
                                     <source loading="lazy" srcset="img/webp/Culculus_Textbook_Ploblem_6.2(2)_1.webp"
@@ -295,10 +314,10 @@
                         <div class="toggle">【証明】lim(θ→0)sinθ/θ=1: 詳細を表示</div>
                         <div class="details">
                             <p>
-                                <div class="fusen">
-                                    \(  \displaystyle \lim_{\theta \to 0}\dfrac{\sin\theta}{\theta}=1 \)
-                                </div>
-                                板書に書いた証明です。
+                            <div class="fusen">
+                                \( \displaystyle \lim_{\theta \to 0}\dfrac{\sin\theta}{\theta}=1 \)
+                            </div>
+                            板書に書いた証明です。
                             <div class="image_section">
                                 <picture>
                                     <source loading="lazy"
@@ -330,10 +349,10 @@
                         <div class="toggle">【証明】(cos<sup>-1</sup>)'=-1/√(1-x<sup>2</sup>): 詳細を表示</div>
                         <div class="details">
                             <p>
-                                <div class="fusen">
-                                    \(  (\cos^{-1})'=-\dfrac{1}{ \sqrt{1-x^2} } \)
-                                </div>
-                                板書に書いた証明を修正した証明です。
+                            <div class="fusen">
+                                \( (\cos^{-1})'=-\dfrac{1}{ \sqrt{1-x^2} } \)
+                            </div>
+                            板書に書いた証明を修正した証明です。
                             <div class="image_section">
                                 <picture>
                                     <source loading="lazy" srcset="img\webp\Proof_differential_of_arccos-1-.webp"
@@ -402,7 +421,8 @@
     <footer>製作者：菊川　颯太</footer>
     <!-- async属性を追加し、非同期でスクリプトを読み込む -->
     <script src="script.js" async></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!---MathJax--->
+    <!---<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <---MathJax--->
+
 </body>
 
 </html>

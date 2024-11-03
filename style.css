@@ -1,6 +1,7 @@
 /* Body全体の設定 */
 body {
-    font-family: sans-serif; /* デフォルトフォントに変更 */
+    font-family: sans-serif;
+    /* デフォルトフォントに変更 */
     background-color: #f0f0f0;
     margin: 0;
     display: flex;
@@ -42,7 +43,8 @@ main {
 .table-for-contents {
     margin: 0 auto 20px;
     width: 100%;
-    text-align: center; /* 中央揃え */
+    text-align: center;
+    /* 中央揃え */
 }
 
 /* 左揃え */
@@ -69,8 +71,10 @@ main {
     padding: 10px;
     background-color: #fff;
     width: 90%;
-    margin: 0 auto; /* 中央揃え */
-    margin-bottom: 10px; /* 各項目の縦の隙間 */
+    margin: 0 auto;
+    /* 中央揃え */
+    margin-bottom: 10px;
+    /* 各項目の縦の隙間 */
 }
 
 /* 大セクションの設定項目 */
@@ -128,6 +132,13 @@ main {
     text-decoration: underline;
 }
 
+/* 数式部：数式は、\(ここに数式\)のように記述 */
+.math {
+    width: 100%;
+    font-size: calc(0.5em + 1vw);
+    margin: 0;
+}
+
 /* お問い合わせの設定項目 */
 .form {
     margin: 0 auto 20px;
@@ -136,7 +147,8 @@ main {
 }
 
 /* 予定の設定項目 */
-.schedule, .one_word {
+.schedule,
+.one_word {
     margin: 0 auto 20px;
     width: 100%;
     border-top: 10px dotted #004898;
@@ -172,7 +184,8 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* 高さを自動に設定 */
+    height: auto;
+    /* 高さを自動に設定 */
 }
 
 /* aタグのフォント色 */
@@ -205,7 +218,8 @@ a {
         box-sizing: border-box;
     }
 
-    header, footer {
+    header,
+    footer {
         width: 100%;
         padding: 0.5em;
         text-align: center;
