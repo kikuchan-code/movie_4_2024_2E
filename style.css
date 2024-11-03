@@ -135,7 +135,7 @@ main {
 /* 数式部：数式は、\(ここに数式\)のように記述 */
 .math {
     width: 100%;
-    font-size: calc(0.5em + 2vw);
+    font-size: clamp(10px, calc(0.5em + 2vw), 20px) ;
     margin: 0;
 }
 
