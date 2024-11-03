@@ -32,13 +32,6 @@ main {
     overflow-x: auto;
 }
 
-/* オープニングの設定項目 */
-.opening {
-    max-width: 1200px;
-    width: 75%;
-    margin: 20px auto;
-}
-
 /* 目次の設定項目 */
 .table-for-contents {
     margin: 0 auto 20px;
@@ -103,7 +96,6 @@ main {
 /* small-details：セクション内小見出しの詳細 */
 .small-details {
     display: none;
-    margin-top: 10px;
     padding: 10px;
     border: 1px solid #ddd;
 }
@@ -127,15 +119,23 @@ main {
 /* 小セクション（セクション内の小見出し）のトグル機能 */
 .small-toggle {
     cursor: pointer;
-    padding: 10px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
     color: #0000ee;
     text-decoration: underline;
+}
+
+/* 小セクション（セクション内の小見出し）の点（ドット） */
+.small-toggle li {
+    list-style: circle !important; /* 強制的にリストスタイルを適用 */;
 }
 
 /* 数式部：数式は、\(ここに数式\)のように記述 */
 .math {
     width: 100%;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.5em + 2vw);
     margin: 0;
 }
 
@@ -146,7 +146,8 @@ main {
     border-top: 10px dotted #004898;
 }
 
-/* 予定の設定項目 */
+/* 注意点・予定・一言の設定項目 */
+.opening,
 .schedule,
 .one_word {
     margin: 0 auto 20px;
@@ -195,7 +196,7 @@ a {
 
 /* ふせんのスタイル */
 .fusen {
-    padding: 0.5em;
+    padding: 1em;
     background-color: #DFF2FC;
     border-left: solid 10px #003775;
     color: #000000;
@@ -225,3 +226,4 @@ a {
         text-align: center;
     }
 }
+
