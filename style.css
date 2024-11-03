@@ -22,7 +22,7 @@ header {
 
 /* レスポンシブデザインのための最大幅を設定 */
 main {
-    padding: 2em;
+    padding: 1em;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -164,6 +164,7 @@ main {
 /* 画像 */
 .image_section {
     margin: 0 auto;
+    padding-top: 10px;
     position: relative;
     overflow: hidden;
     width: 100%;
